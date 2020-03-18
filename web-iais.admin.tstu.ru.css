@@ -1,0 +1,302 @@
+@-moz-document domain(web-iais.admin.tstu.ru) {
+
+/* General styles override */
+::selection { background-color: rgba(138, 180, 248, 0.5) !important; }
+
+body {
+  background-color: #202020 !important;
+  color: #ffffff !important;
+}
+
+a { color: #7f96d9 !important; }
+
+input[type="text"] {
+  border-color: rgba(255, 255, 255, 0.2) !important;;
+  background-color: #151515;
+  color: #d0d0d0;
+}
+
+input[type="button"] {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1));
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+  color: #e0e0e0;
+  -moz-appearance: none !important;
+}
+
+select {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1));
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 2px;
+  color: #d0d0d0;
+  -moz-appearance: none !important;
+}
+
+/* Site styles override */
+div#uBreadcrumbs ul li.active span, table.formlayout td label,
+div#uLoginContainer section.uRegion div.uRegionContent table.formlayout td label.uOptional {
+  color: #d0d0d0 !important;
+}
+
+header#uHeader nav ul li a, nav.uPageTabs ul li a,
+header#uHeader hgroup ul li a, header#uHeader hgroup ul li span,
+header#uHeader nav ul li a.active, header#uHeader nav ul li a.active:hover,
+nav.uPageTabs ul li a.active, nav.uPageTabs ul li a.active:hover,
+header#uHeader hgroup a#uLogo, section.uRegion > div.uRegionHeading h1,
+div#uLoginContainer section.uRegion div.uRegionHeading h1, .READ_MORE {
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) !important;
+  color: #d0d0d0 !important;
+}
+
+div#uLoginContainer section.uRegion div.uRegionContent table.formlayout td input,
+table.formlayout td span.display_only, table.formlayout td span.display_only a,
+table td.pagination span.fielddata, footer#uFooter div.uFooterContent {
+  color: #a0a0a0 !important;
+}
+
+table.formlayout td input.text_field, table.formlayout td select.selectlist,
+table.formlayout td input.password, table.formlayout td input[type="text"],
+table.formlayout td input[type="password"], table.formlayout td textarea,
+a.uButton, .apexir_COLUMN_SELECTOR {
+  background-color: #151515 !important;
+  color: #d0d0d0 !important;
+}
+
+.apexir_COLUMN_SELECTOR, .apexir_SEARCH {
+  background-color: #404040 !important;
+  border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+body#uLogin {
+  background: #262626 !important;
+}
+
+div#uLoginContainer section.uRegion div.uRegionContent table.formlayout td a.uButton span {
+  background-color: #262626 !important;
+  background-image: linear-gradient(180deg, rgba(138, 180, 248, 0.3), rgba(0, 0, 0, 0)) !important;
+  box-shadow: 0 1px 0 rgba(138, 180, 248, 0.2) inset !important;
+}
+
+header#uHeader {
+  background: linear-gradient(0deg, #1c2531, #1c3659) !important;
+}
+
+header#uHeader nav ul li a, nav.uPageTabs ul li a {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1)) !important;
+}
+
+header#uHeader nav ul li a.active, header#uHeader nav ul li a.active:hover,
+nav.uPageTabs ul li a.active, nav.uPageTabs ul li a.active:hover,
+header#uHeader nav ul li a:hover, nav.uPageTabs ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.35) !important;
+  color: #000000 !important;
+}
+
+section.uRegion {
+  background-color: #101010 !important;
+  border-color: #202020 !important;
+  color: #ffffff !important;
+}
+
+section.uRegion > div.uRegionHeading {
+  background-color: #202020 !important;
+  border-color: #202020 !important;
+  background-image: linear-gradient(180deg, rgba(138, 180, 248, 0.3), rgba(0, 0, 0, 0))  !important;
+  box-shadow: 0 1px 0 rgba(138, 180, 248, 0.2) inset !important;
+}
+
+#apexir_TOOLBAR_OPEN, #apexir_TOOLBAR_CLOSE {
+  background-image: linear-gradient(0deg, #262626, #404040)  !important;
+  background-color: #262626 !important;
+  border-color: #404040 !important;
+}
+
+.apexir_ROW_SELECT_LIST label, table.uReport > tbody > tr > td,
+#apexir_DATA_PANEL > table .apexir_WORKSHEET_DATA th div,
+#apexir_GROUP_BY > table .apexir_WORKSHEET_DATA th div {
+  color: #d0d0d0 !important;
+}
+
+table.uReportStandard,
+#apexir_DATA_PANEL > table .apexir_WORKSHEET_DATA,
+#apexir_GROUP_BY > table .apexir_WORKSHEET_DATA {
+  border-color: #404040 !important;
+}
+
+table.uReportStandard thead > tr > th,
+#apexir_DATA_PANEL > table .apexir_WORKSHEET_DATA th,
+#apexir_GROUP_BY > table .apexir_WORKSHEET_DATA th {
+  background-image: linear-gradient(0deg, #262626, #404040)  !important;
+  background-color: #262626 !important;
+  border-color: #404040 !important;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) !important;
+  color: #b0b0b0 !important;
+}
+
+table.uReport thead > tr > th a {
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) !important;
+}
+
+table.uReportStandard > tbody > tr > td {
+  border-color: #404040 !important;
+}
+
+table.uReport > tbody > tr > td {
+  background-color: #101010 !important;
+}
+
+table.uReport > tbody > tr:nth-child(2n) > td {
+  background-color: #202020 !important;
+}
+
+table.uReport > tbody > tr:hover > td,
+#apexir_DATA_PANEL > table .apexir_WORKSHEET_DATA tr.odd:hover td,
+#apexir_DATA_PANEL > table .apexir_WORKSHEET_DATA tr.even:hover td,
+#apexir_GROUP_BY > table .apexir_WORKSHEET_DATA tr.odd:hover td,
+#apexir_GROUP_BY > table .apexir_WORKSHEET_DATA tr.even:hover td {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+#apexir_DATA_PANEL > table .apexir_WORKSHEET_DATA td,
+#apexir_GROUP_BY > table .apexir_WORKSHEET_DATA td {
+  background-color: #101010 !important;
+  border-color: #404040 !important;
+  color: #d0d0d0 !important;
+}
+
+#apexir_DATA_PANEL > table .apexir_WORKSHEET_DATA td a,
+#apexir_GROUP_BY > table .apexir_WORKSHEET_DATA td a {
+  color: #c0c0c0 !important;
+}
+
+.table, .th, .td, .tds, .tdr, .th1, .th2, .th3, .th4, .th5 {
+  border-color: #b0b0b0 !important;
+}
+
+.th { background-color: #707070 !important; }
+.th1 { background-color: #4d6f91 !important; }
+.th2 { background-color: #457e45 !important; }
+.th3 { background-color: #714e2b !important; }
+.th4 { background-color: #864e59 !important; }
+.th5 { background-color: #6d652c !important; }
+.tds { background-color: rgba(138, 180, 248, 0.4) !important; }
+.tdr { color: #e18c8c !important; }
+
+section.uRegion span.uButtonContainer a.uButton,
+section.uRegion span.uButtonContainer a.uButtonLarge,
+section.uRegion span.uButtonContainer a.uButtonSmall,
+section.uRegion span.uButtonContainer a.uButtonIR,
+section.uButtonRegion a.uButton, section.uButtonRegion a.uButtonLarge,
+section.uButtonRegion a.uButtonSmall, section.uButtonRegion a.uButtonIR {
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) !important;
+}
+
+.apexir_ACTION_MENU button#apexir_ACTIONSMENUROOT span,
+.apexir_ACTION_MENU button#apexir_WEBSHEETSMANAGE span,
+.apexir_WEBSHEET_MENU button#apexir_ACTIONSMENUROOT span,
+.apexir_WEBSHEET_MENU button#apexir_WEBSHEETSMANAGE span,
+#apexir_SEARCHDROPROOT.apexir_SEARCHICON {
+  background-image: url('./tstu/img/app_theme.png') !important;
+}
+
+button.apexir-go-button span, a.uButton span,
+.apexir_ACTION_MENU button#apexir_ACTIONSMENUROOT span,
+.apexir_ACTION_MENU button#apexir_WEBSHEETSMANAGE span,
+.apexir_WEBSHEET_MENU button#apexir_ACTIONSMENUROOT span,
+.apexir_WEBSHEET_MENU button#apexir_WEBSHEETSMANAGE span,
+#apexir_SEARCHDROPROOT.apexir_SEARCHICON {
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) !important;
+  color: #d0d0d0 !important;
+}
+
+button.apexir-go-button, a.uButton span,
+.apexir_ACTION_MENU button#apexir_ACTIONSMENUROOT,
+.apexir_ACTION_MENU button#apexir_WEBSHEETSMANAGE,
+.apexir_WEBSHEET_MENU button#apexir_ACTIONSMENUROOT,
+.apexir_WEBSHEET_MENU button#apexir_WEBSHEETSMANAGE {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1)) !important;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) !important;
+}
+
+#apexir_columnsearch, #apexir_col_values_drop,
+#apexir_rollover, .dhtmlSubMenu, .dhtmlSubMenu li.dhtmlMenuSep {
+  background-color: #101010 !important;
+  border-color: #404040 !important;
+}
+
+#apexir_columnsearch > a, .dhtmlSubMenu li a, .dhtmlSubMenu li a span {
+  color: #d0d0d0 !important;
+}
+
+#apexir_columnsearch > a, .dhtmlSubMenu li a {
+  background-color: #101010 !important;
+  border-color: #101010 !important;
+}
+
+#apexir_columnsearch > a:hover, .dhtmlSubMenu li a:hover {
+  background-color: rgba(138, 180, 248, 0.2) !important;
+  border-color: rgba(138, 180, 248, 0.2) !important;
+}
+
+#apexir_SEARCH_COLUMN_DROP {
+  background-color: rgba(138, 180, 248, 0.2) !important;
+  border-color: rgba(255, 255, 255, 0.2) !important;
+  color: #d0d0d0 !important;
+}
+
+#P71_PODPIS_AVTORA {
+  background-color: #6d652c !important;
+  color: #ffffff !important;
+}
+
+#apexir_DATA_PANEL > table .apexir_WORKSHEET_DATA tr.rule_261429418619572136 td
+  { background-color: #242017 !important; }
+#apexir_DATA_PANEL > table .apexir_WORKSHEET_DATA tr.rule_261429507620572136 td
+  { background-color: #243324 !important; }
+#apexir_DATA_PANEL > table .apexir_WORKSHEET_DATA tr.rule_261429616192572136 td
+  { background-color: #291b1f !important; }
+#apexir_DATA_PANEL > table .apexir_WORKSHEET_DATA tr.rule_261429721648572136 td
+  { background-color: #E4F2F5 !important; }
+#apexir_DATA_PANEL > table .apexir_WORKSHEET_DATA tr.rule_261429802350572136 td
+  { background-color: #233236 !important; }
+#apexir_DATA_PANEL > table .apexir_WORKSHEET_DATA tr.rule_261430504652572137 td
+  { background-color: #2a333d !important; }
+#apexir_DATA_PANEL > table .apexir_WORKSHEET_DATA tr.rule_261430005588572136 td
+  { background-color: #302023 !important; }
+#apexir_DATA_PANEL > table .apexir_WORKSHEET_DATA tr.rule_261430106899572136 td
+  { background-color: #2e3322 !important; }
+#apexir_DATA_PANEL > table .apexir_WORKSHEET_DATA tr.rule_261430213878572136 td
+  { background-color: #382538 !important; }
+#apexir_DATA_PANEL > table .apexir_WORKSHEET_DATA tr.rule_261430302523572136 td
+  { background-color: #3b3429 !important; }
+#apexir_DATA_PANEL > table .apexir_WORKSHEET_DATA tr.rule_261430422360572137 td
+  { background-color: #1f2615 !important; }
+#apexir_DATA_PANEL > table .apexir_WORKSHEET_DATA tr.rule_261429931958572136 td
+  { background-color: #2c2e1d !important; }
+
+
+#apexir_DATA_PANEL > table .apexir_WORKSHEET_DATA tr td.rule_261424230301521146_td {
+ background-color: #361f19 !important;
+ color: #f7908e !important;
+}
+
+.ui-widget-overlay {
+  background: #000000 !important;
+  opacity: 0.55 !important;
+}
+
+.ui-widget-content {
+  background-color: #202020 !important;
+  border-color: #262626 !important;
+}
+
+.ui-widget-header {
+  background-color: #1c3659 !important;
+  border-color: #1c3659 !important;
+  color: #d0d0d0 !important;
+}
+
+#ModalWait #loaderImage {
+  background-image: url('./tstu/img/loading.gif') !important;
+}

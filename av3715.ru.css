@@ -1,0 +1,62 @@
+@-moz-document domain(av3715.ru) {
+
+/* General styles override */
+html {
+  font-family: Noto, Verdana;
+  background-color: #101010;
+  color: #ffffff;
+}
+
+a { color: #d0d0d0; }
+a:visited { color: #a0a0a0; }
+
+table, td { border-color: #808080; }
+th, td { padding: 3px 5px; }
+
+input:not([type='checkbox']):not([type='radio']):not([type='submit']):not([type='button']),
+textarea {
+  background-color: #151515;
+  border: 1px solid #aaaaaa;
+  color: #ffffff;
+  padding: 3px 5px;
+  -moz-appearance: none !important;
+}
+
+button, input[type="submit"], input[type="button"] {
+  background-color: #606060;
+  border: 1px solid #606060;
+  border-radius: 2px;
+  box-shadow: 2px 2px 2px #404040;
+  color: #ffffff;
+  cursor: pointer;
+  margin: 2px;
+  padding: 3px 10px;
+  -moz-appearance: none !important;
+}
+
+button:hover, input[type="submit"]:hover, input[type="button"]:hover {
+  padding: 3px 9px 3px 11px;
+  background-color: #404040;
+  border-color: #404040;
+  box-shadow: 2px 2px 2px #606060;
+  -moz-appearance: none !important;
+}
+
+button:focus, button:active, input:focus, input:active, textarea:focus, select:focus {
+  border-color: #8ab4f8 !important;
+  -moz-appearance: none !important;
+}
+
+select {
+  background-color: #606060 !important;
+  border: 0;
+  border-radius: 2px;
+  color: #ffffff;
+  padding: 2px;
+  -moz-appearance: none !important;
+}
+
+/* Site styles override */
+.md { color: #b0b0b0 !important; }
+
+}
