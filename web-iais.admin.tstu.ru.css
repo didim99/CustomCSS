@@ -55,6 +55,18 @@ table td.pagination span.fielddata, footer#uFooter div.uFooterContent {
   color: #a0a0a0 !important;
 }
 
+div#uLoginContainer > section.uRegion > div.uRegionHeading > h1 > div {
+  background-image: url('./tstu/img/tstu_logo_white.svg');
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 75px;
+  padding-left: 100px !important;
+}
+
+div#uLoginContainer > section.uRegion > div.uRegionHeading > h1 > div > img {
+  display: none !important;
+}
+
 table.formlayout td input.text_field, table.formlayout td select.selectlist,
 table.formlayout td input.password, table.formlayout td input[type="text"],
 table.formlayout td input[type="password"], table.formlayout td textarea,

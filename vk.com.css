@@ -21,7 +21,7 @@ div.wdd, .wdd_text, #wk_box, .eltt, #top_notify_wrap,
 .wall_module .reply_fakebox_wrap, #fc_contacts, .ts_cont_wrap,
 .wall_module .page_media_thumbed_link, .cal_clear, .cal_table .day,
 .deep_active .replies .reply_box_inner_wrap.fixed, .audio_pl_snippet2,
-.deep_active.wall_module .replies .reply_box_inner_wrap.fixed,
+.deep_active.wall_module .replies .reply_box_inner_wrap.fixed, .wddi,
 .deep_active.wall_module .wl_replies_block_wrap .reply_box_inner_wrap.fixed,
 .deep_active .wl_replies_block_wrap .reply_box_inner_wrap.fixed,
 .im-page .im-page--dialogs-footer.ui_grey_block, .preq_wrap,
@@ -52,7 +52,7 @@ div.wdd, .wdd_text, #wk_box, .eltt, #top_notify_wrap,
 .settings_block_footer, .box_controls, .video_choose_upload_area,
 .photos_choose_upload_area, .docs_choose_upload_area, .web_cam_photo,
 .video_add_external, .emoji_tabs, .emoji_tabs_l_s, .emoji_tabs_r_s,
-.dev_req_result, .wk_extpage_footer_wrap {
+.dev_req_result, .wk_extpage_footer_wrap, .feed_groups_hidden_list_show_btn {
   background-color: #262626 !important;
   border-color: #202020 !important;
 }
@@ -168,7 +168,7 @@ div.wdd, .wdd_text, #wk_box, .eltt, #top_notify_wrap,
 .im-page_classic.im-page .im-page--header, .top_notify_cont .top_notify_header,
 .im-page_classic.im-page .im-page--chat-header, .wk_hider_box, .wk_hider_box_opened,
 .im-page_classic.im-page .im-page--chat-input, .audio_pl_snippet2 .audio_pl_snippet__header,
-.im-chat-input.im-chat-input_classic, .cal_table > tbody,
+.im-chat-input.im-chat-input_classic, .cal_table > tbody, .composer_wdd .wdd_list, .wdd_list,
 .ChatSettingsMembersWidget--search .ChatSettingsMembersWidget__header,
 .deep_active.wl_post.wall_module .wl_replies_block_wrap .wl_replies_empty,
 .feedback_row_clickable:not(.feedback_row_touched):hover, .friends_cur_filters,
@@ -271,7 +271,7 @@ input.ui_search_field, input.selector_input, ul.listing li span,
 
 a, .ui_rmenu_item, .ui_actions_menu_item, .olist_item_name,
 .im-mess-stack .im-mess-stack--content .im-mess-stack--pname > a,
-.im-mess-stack .im-mess-stack--content .im-mess-stack--pname,
+.im-mess-stack .im-mess-stack--content .im-mess-stack--pname, .wddi_text,
 .audio_row .audio_row__performers a, .im-replied--author-link, .wk_hider_title,
 .Entity__title, .web_cam_photo, .video_add_external, .post_action_btn.on {
   color: #758fb9 !important;
@@ -293,7 +293,7 @@ a, .ui_rmenu_item, .ui_actions_menu_item, .olist_item_name,
 
 .im-mess_unread, .im-mess_selected,
 .im-mess_unread:last-child::before,
-.im-mess_selected:last-child::before,
+.im-mess_selected:last-child::before, .wddi_over,
 .im-mess_unread::before, .im-mess_selected::before,
 .im-mess.im-mess_selected + .im-mess::before,
 .im-mess.im-mess_unread + .im-mess::before {
@@ -316,10 +316,12 @@ body.dev .wk_text blockquote, .wall_module .replies_side,
   border-color: #262626 !important;
 }
 
+.feed_groups_hidden_list_show_btn:hover,
 .audio_layer_container .audio_friend:hover,
 .ui_rmenu_item:hover, .ui_rmenu_subitem:hover,
 .notify_sources_tt_content .line_cell:hover,
 .notify_sources_tt_content .line_cell.selected,
+.mv_chat_admin_message .mv_chat_message_author_name,
 .feedback_row_clickable:not(.feedback_row_touched):hover,
 .eltt_fancy_action:hover, .im-mess.im-mess_search:hover,
 .my_current_info:hover, .ms_item:hover, .left_row:hover,
@@ -372,9 +374,9 @@ a.ts_contact.active, a.ts_search_link.active, .links-list__item:hover,
 .post_author_data .post_author_data_title, .post_date,
 .wall_module .published_by_date, .wall_module .wall_post_source,
 .post_date .post_link, .post_date .wall_text_name_explain_promoted_post,
-.mention_tt_extra, .mention_tt_extra a, .media_voting_option_text
-.subheader, h4.subheader, .flat_button.secondary_dark,
-a.bp_date, .wall_module .reply_to, .wall_module .wd_lnk,
+.mention_tt_extra, .mention_tt_extra a, .media_voting_option_text,
+.subheader, h4.subheader, .flat_button.secondary_dark, .wddi_over .wddi_sub,
+a.bp_date, .wall_module .reply_to, .wall_module .wd_lnk, .wddi_sub,
 .im-mess--lbl-was-edited, .friends_field .group_link, .friends_field,
 .im-mess-stack .im-mess-stack--content .im-mess-stack--tools,
 .im-mess-stack .im-mess-stack--content .im-mess-stack--tools a,
