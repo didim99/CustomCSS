@@ -1,4 +1,4 @@
-@-moz-document domain(web-iais.admin.tstu.ru) {
+@-moz-document domain(web-iais.admin.tstu.ru), domain(web-iais0.admin.tstu.ru) {
 
 /* General styles override */
 ::selection { background-color: rgba(138, 180, 248, 0.5) !important; }
@@ -34,7 +34,8 @@ select {
 }
 
 /* Site styles override */
-div#uBreadcrumbs ul li.active span, table.formlayout td label,
+div#uBreadcrumbs ul li.active span,
+table.formlayout td label, section.uMessageRegion div.uMessageText,
 div#uLoginContainer section.uRegion div.uRegionContent table.formlayout td label.uOptional {
   color: #d0d0d0 !important;
 }
@@ -51,7 +52,7 @@ div#uLoginContainer section.uRegion div.uRegionHeading h1, .READ_MORE {
 
 div#uLoginContainer section.uRegion div.uRegionContent table.formlayout td input,
 table.formlayout td span.display_only, table.formlayout td span.display_only a,
-table td.pagination span.fielddata, footer#uFooter div.uFooterContent {
+table td.pagination span.fielddata, footer#uFooter div.uFooterContent, .TEXT_O {
   color: #a0a0a0 !important;
 }
 

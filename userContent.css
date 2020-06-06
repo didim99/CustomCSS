@@ -2,4 +2,5 @@
 @import url(av3715.ru.css);
 @import url(vk.com.css);
 
+/* General styles override */
 ::selection { background-color: rgba(138, 180, 248, 0.5); }

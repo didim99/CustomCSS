@@ -23,10 +23,10 @@ div.wdd, .wdd_text, #wk_box, .eltt, #top_notify_wrap,
 .deep_active .replies .reply_box_inner_wrap.fixed, .audio_pl_snippet2,
 .deep_active.wall_module .replies .reply_box_inner_wrap.fixed, .wddi,
 .deep_active.wall_module .wl_replies_block_wrap .reply_box_inner_wrap.fixed,
-.deep_active .wl_replies_block_wrap .reply_box_inner_wrap.fixed,
-.im-page .im-page--dialogs-footer.ui_grey_block, .preq_wrap,
-.im-page .im-page--mess-search, .pv_cont .narrow_column,
-.audio_page_layout .audio_friends_list, .selector_container,
+.deep_active .wl_replies_block_wrap .reply_box_inner_wrap.fixed, .mv_info,
+.im-page .im-page--dialogs-footer.ui_grey_block, .preq_wrap, .mv_chat_reply_form,
+.im-page .im-page--mess-search, .pv_cont .narrow_column, .group_l_row,
+.group_l_row:last-child, .audio_page_layout .audio_friends_list, .selector_container,
 .im-create, .im-create.im-create_classic .im-create--footer,
 .photos_container .photos_row, .im-page-pinned, .im-page-pinned::after,
 .pv_white_bg, .search_filters_minimized_text, div.fc_tab_txt, .fc_msgs,
@@ -35,7 +35,8 @@ div.wdd, .wdd_text, #wk_box, .eltt, #top_notify_wrap,
 #group_apps_list .group_apps_list_rows .group_apps_list_row .group_apps_edit,
 .ChatSettingsInfo, .List, .ChatSettingsMembersWidget, .Button--mobile,
 .groups_edit_event_log_page .groups_edit_event_log_controls,
-.audio_page_layout .audio_search_wrapper {
+.audio_page_layout .audio_search_wrapper, #dev_left_nav,
+.CatalogBlock--divided, .CatalogSection, .dev_section_methods_wrap {
   background-color: #101010 !important;
   border-color: #202020 !important;
 }
@@ -44,6 +45,7 @@ div.wdd, .wdd_text, #wk_box, .eltt, #top_notify_wrap,
 #dev_page_cont_wrap #dev_page_cont {
   background-color: #262626 !important;
 }
+
 
 .mention_tt_actions, .emoji_tab_sel,
 .box_title_wrap.box_grey, .top_notify_show_all,
@@ -68,6 +70,11 @@ div.wdd, .wdd_text, #wk_box, .eltt, #top_notify_wrap,
   border-color: #262626 !important;
 }
 
+.wk_table th {
+  background-color: #262626 !important;
+  border-color: #404040 !important;
+}
+
 .page_block, .media_voting,
 .im-chat-input.im-chat-input_classic,
 .im-page_classic .im-page--chat-header-in,
@@ -75,7 +82,8 @@ div.wdd, .wdd_text, #wk_box, .eltt, #top_notify_wrap,
 .im-page_classic.im-page .im-page--dialogs-footer,
 .im-page_classic.im-page .im-page--dialogs-search,
 .im-create.im-create_classic .im-create--table,
-#dev_page_wrap1, .dev_page_block {
+#dev_page_wrap1, .dev_page_block, #dev_left_nav,
+.dev_section_methods_wrap {
   box-shadow: 0 1px 0 0 #202020, 0 0 0 1px #202020 !important;
 }
 
@@ -131,6 +139,10 @@ div.wdd, .wdd_text, #wk_box, .eltt, #top_notify_wrap,
   border-bottom-color: #101010 !important;
 }
 
+.post_suggest::before, .post_suggest::after {
+  border-bottom-color: #262626 !important;
+}
+
 .eltt.eltt_bottom.eltt_arrow_size_normal > .eltt_arrow_back {
   border-bottom-color: #202020 !important;
 }
@@ -169,9 +181,9 @@ div.wdd, .wdd_text, #wk_box, .eltt, #top_notify_wrap,
 .im-page_classic.im-page .im-page--chat-header, .wk_hider_box, .wk_hider_box_opened,
 .im-page_classic.im-page .im-page--chat-input, .audio_pl_snippet2 .audio_pl_snippet__header,
 .im-chat-input.im-chat-input_classic, .cal_table > tbody, .composer_wdd .wdd_list, .wdd_list,
-.ChatSettingsMembersWidget--search .ChatSettingsMembersWidget__header,
-.deep_active.wl_post.wall_module .wl_replies_block_wrap .wl_replies_empty,
-.feedback_row_clickable:not(.feedback_row_touched):hover, .friends_cur_filters,
+.ChatSettingsMembersWidget--search .ChatSettingsMembersWidget__header, .mv_info_narrow_column,
+.deep_active.wl_post.wall_module .wl_replies_block_wrap .wl_replies_empty, .mv_actions_block,
+.feedback_row_clickable:not(.feedback_row_touched):hover, .friends_cur_filters, .post_suggest,
 .nim-dialog:not(.nim-dialog_deleted).nim-dialog.nim-dialog_classic.nim-dialog_unread,
 .nim-dialog:not(.nim-dialog_deleted).nim-dialog.nim-dialog_hovered,
 .nim-dialog:not(.nim-dialog_deleted).nim-dialog:hover,
@@ -260,20 +272,21 @@ input.ui_search_field, input.selector_input, ul.listing li span,
 .im-fwd.im-fwd_msg .im-fwd--messages, #group_section_menu .module_body .ui_gallery .ui_gallery_item .groups_menu_item .groups_menu_item_title, .wall_reasons_list, .Tabs__item--active > *,
 .audio_pl_item2 .audio_pl__subtitle > a, .audio_page__shuffle_all .audio_page__shuffle_all_button,
 .module_header .header_top, .ui_search_fltr b, .media_voting_option_percent, .page_block_sub_header,
-.ui_tabs_box .ui_tab_sel .ui_tab_count, .owner_photo_additional, 
-.audio_pl_snippet2 .audio_shuffle_all_button,
-#dev_page_wrap1, .dev_page_block, .dev_methods_list_desc,
+.ui_tabs_box .ui_tab_sel .ui_tab_count, .owner_photo_additional, .mv_title, .mv_recom_block_title,
+.audio_pl_snippet2 .audio_shuffle_all_button, .apps_access_item_info b, .box_msg, .box_msg_gray,
+#dev_page_wrap1, .dev_page_block, .dev_methods_list_desc, .group_help_desc,
 .dev_result_bracket, .dev_result_key, .dev_page_cont .wk_header,
 .dev_page_cont .wk_sub_header, .dev_page_cont .wk_sub_sub_header,
 .ownerButton_lovina_valentine .ownerButton__upperTitle {
   color: #ffffff !important;
 }
 
-a, .ui_rmenu_item, .ui_actions_menu_item, .olist_item_name,
+a, .ui_rmenu_item, .ui_actions_menu_item, .olist_item_name, .mem_pseudolink,
 .im-mess-stack .im-mess-stack--content .im-mess-stack--pname > a,
 .im-mess-stack .im-mess-stack--content .im-mess-stack--pname, .wddi_text,
 .audio_row .audio_row__performers a, .im-replied--author-link, .wk_hider_title,
-.Entity__title, .web_cam_photo, .video_add_external, .post_action_btn.on {
+.Entity__title, .web_cam_photo, .video_add_external, .post_action_btn.on,
+.nim-dialog.nim-dialog_typing .nim-dialog--typing {
   color: #758fb9 !important;
 }
 
@@ -301,7 +314,7 @@ a, .ui_rmenu_item, .ui_actions_menu_item, .olist_item_name,
   border-bottom-color: #354156 !important;
 }
 
-body.dev .wk_text blockquote, .wall_module .replies_side,
+body.dev .wk_text blockquote, .wall_module .replies_side, .fc_msgs_unread,
 .box_msg, .box_msg_gray, .msg, .media_voting_option_bar, .wk_text blockquote,
 .im-to-end__button, .emoji_smile_cont:hover, .stories_feed_preview_add,
 .wall_module .like_tt_bottom_page_friend_reply, .olist_item_wrap:hover,
@@ -309,9 +322,11 @@ body.dev .wk_text blockquote, .wall_module .replies_side,
 .nim-dialog:not(.nim-dialog_deleted).nim-dialog_unread.nim-dialog_classic,
 .nim-dialog.nim-dialog_classic.nim-dialog_unread-out .nim-dialog--inner-text,
 .im-mess.im-mess_light, .dev_methods_list_row:hover, .ListItem--active,
-.ListItem--can-be-hovered.ListItem--selectable:hover, .Button--mobile:hover,
-.audio_page__shuffle_all .audio_page__shuffle_all_button:hover,
-.groups_edit_event_log_page .groups_edit_event_log_items_wrap .groups_edit_event_log_item_wrap:hover > .groups_edit_event_log_item_main, .groups_edit_event_log_page .groups_edit_event_log_items_wrap .groups_edit_event_log_item_wrap_focused, .ui_tooltipMenu__link:hover {
+.ListItem--can-be-hovered.ListItem--selectable:hover, .im-navigation--to-end .im-navigation__button,
+.Button--mobile:hover, .audio_page__shuffle_all .audio_page__shuffle_all_button:hover, 
+.groups_edit_event_log_page .groups_edit_event_log_items_wrap .groups_edit_event_log_item_wrap:hover > .groups_edit_event_log_item_main, .groups_edit_event_log_page .groups_edit_event_log_items_wrap .groups_edit_event_log_item_wrap_focused, .ui_tooltipMenu__link:hover,
+.group_info_rows_redesign .group_info_row.onboarding_placeholder .line_value.line_edit,
+.group_info_rows_redesign .group_info_row.onboarding_placeholder .line_value:hover {
   background-color: rgba(138, 180, 248, 0.2) !important;
   border-color: #262626 !important;
 }
@@ -335,7 +350,9 @@ body.dev .wk_text blockquote, .wall_module .replies_side,
 a.ts_contact.active, a.ts_search_link.active, .links-list__item:hover,
 .pv_cont .pv_can_edit:hover, .im-create .im-creation--item:hover,
 .im-create .im-creation--item.im-creation--item_hovered, .dev_search_row em,
-.dev_sugg_sel, .EditableLabel:hover .EditableLabel__text, .search_focused .highlight {
+.dev_sugg_sel, .EditableLabel:hover .EditableLabel__text, .dev_nav a.nav.nav_selected,
+.dev_nav a.nav.nav_selected:hover, .dev_nav .nav:hover, .search_focused .highlight,
+.wall_module .replies_open, .wall_module .wr_header {
   background-color: rgba(138, 180, 248, 0.2) !important;
   color: #ffffff !important;
 }
@@ -388,7 +405,10 @@ a.bp_date, .wall_module .reply_to, .wall_module .wd_lnk, .wddi_sub,
   color: #909090 !important;
 }
 
-.ChatSettingsInfo__title, .media_voting_option_text, .feedback_header b {
+.ChatSettingsInfo__title, .media_voting_option_text, .feedback_header b,
+.gtop_complex_message .gtop_content .gtop_header,
+.settings_activity_history .settings_history_main_info,
+.settings_activity_history .settings_history_main_info .settings_history_separated::before {
   color: #d0d0d0 !important;
 }
 
@@ -417,11 +437,20 @@ a.bp_date, .wall_module .reply_to, .wall_module .wd_lnk, .wddi_sub,
 .emoji_sprite, .emoji_cats_title_helper:after,
 .ui_scroll_default_theme.ui_scroll_emoji_theme > .ui_scroll_overflow > .ui_scroll_shadow_bottom,
 .ui_scroll_default_theme.ui_scroll_emoji_theme > .ui_scroll_overflow > .ui_scroll_shadow_top {
-  background-image:url('./vk/img/emoji_sprite.png') !important;
+  background-image: url('./vk/img/emoji_sprite.png') !important;
 }
 
 .im-mess-stack--mess .im-mess.im-mess_gift {
   background-color: #262000 !important;
+}
+
+#system_msg {
+  background-color: #063080 !important;
+}
+
+.apps_edit_success {
+  background-color: #3c3202 !important;
+  border-color: #5f5731 !important;
 }
 
 }
