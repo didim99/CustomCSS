@@ -27,7 +27,7 @@ div.wdd, .wdd_text, #wk_box, .eltt, #top_notify_wrap,
 .im-page .im-page--dialogs-footer.ui_grey_block, .preq_wrap, .mv_chat_reply_form,
 .im-page .im-page--mess-search, .pv_cont .narrow_column, .group_l_row,
 .group_l_row:last-child, .audio_page_layout .audio_friends_list, .selector_container,
-.im-create, .im-create.im-create_classic .im-create--footer,
+.im-create, .im-create.im-create_classic .im-create--footer, .MassMentionWarning,
 .photos_container .photos_row, .im-page-pinned, .im-page-pinned::after,
 .pv_white_bg, .search_filters_minimized_text, div.fc_tab_txt, .fc_msgs,
 #dev_search_suggest, #dev_page_wrap1, .dev_page_block, .dev_section_wrap,
@@ -65,7 +65,7 @@ div.wdd, .wdd_text, #wk_box, .eltt, #top_notify_wrap,
 .im-create .im-create--tabs, .owner_photo_additional,
 .wl_post_reply_form_forbidden, .submit_post, .im-chat-input,
 .feedback_row_wrap.unread:not(.feedback_row_touched),
-.im-page--chat-header, .im-top-banner, .wke_controls {
+.im-page--chat-header, .im-top-banner, .wke_controls, [dir] .mail_box_cont {
   background-color: #202020 !important;
   border-color: #262626 !important;
 }
@@ -269,7 +269,7 @@ input.ui_search_field, input.selector_input, ul.listing li span,
 .notify_sources_tt_content .line_cell .info:not(.group_notify_add_source_button),
 .top_notify_header, .top_notify_cont .feedback_header, .cal_table,  .top_notify_cont,
 .ads_ad_description, .ads_ad_snippet_description_title, .top_notify_cont .feedback_header,
-.im-fwd.im-fwd_msg .im-fwd--messages, #group_section_menu .module_body .ui_gallery .ui_gallery_item .groups_menu_item .groups_menu_item_title, .wall_reasons_list, .Tabs__item--active > *,
+.im-fwd.im-fwd_msg .im-fwd--messages, #group_section_menu .module_body .ui_gallery .ui_gallery_item .groups_menu_item .groups_menu_item_title, .wall_reasons_list, .Tabs__item--active > *, .MassMentionWarning__title,
 .audio_pl_item2 .audio_pl__subtitle > a, .audio_page__shuffle_all .audio_page__shuffle_all_button,
 .module_header .header_top, .ui_search_fltr b, .media_voting_option_percent, .page_block_sub_header,
 .ui_tabs_box .ui_tab_sel .ui_tab_count, .owner_photo_additional, .mv_title, .mv_recom_block_title,
@@ -400,7 +400,7 @@ a.bp_date, .wall_module .reply_to, .wall_module .wd_lnk, .wddi_sub,
 .audio_page_layout .audio_item__title, .audio_page_layout .audio_item__title > a,
 .im-chat-input--editing-head, .nim-dialog .nim-dialog--preview, .ui_search_fltr_label,
 .nim-dialog.nim-dialog_classic.nim-dialog_unread-out .nim-dialog--inner-text,
-.nim-dialog.nim-dialog_classic.nim-dialog_unread-out.nim-dialog_muted .nim-dialog--inner-text, .dev_const_param_name, .wk_gray, ul.listing li span .wk_gray, .gift_tt_header,
+.nim-dialog.nim-dialog_classic.nim-dialog_unread-out.nim-dialog_muted .nim-dialog--inner-text, .dev_const_param_name, .wk_gray, ul.listing li span .wk_gray, .gift_tt_header, .MassMentionWarning__text,
 .ChatSettingsInfo__meta, .ui_rmenu_subitem, .media_voting_option_count {
   color: #909090 !important;
 }
