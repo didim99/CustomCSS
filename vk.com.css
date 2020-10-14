@@ -102,7 +102,7 @@ div.wdd, .wdd_text, #wk_box, .eltt, #top_notify_wrap,
 .cal_table > thead, .cal_table .month,
 .cal_table .month_arr, .cal_table .daysofweek,
 #page_header_cont .back, .fc_tab_head, .box_title_wrap,
-#dev_top_nav_wrap, .PopupHeader {
+#dev_top_nav_wrap, .PopupHeader, [dir] #page_header_cont {
   background-color: #111e33 !important;
   border-color: #213352 !important;
 }
@@ -112,6 +112,15 @@ div.wdd, .wdd_text, #wk_box, .eltt, #top_notify_wrap,
 .top_audio_player:hover, .top_audio_player.active,
 .dev_top_link:hover, .dev_top_link.sel, #dev_top_nav a:hover {
   background-color: #31476b !important;
+}
+
+[dir] .TopSearch__input {
+  background-color: #101010 !important;
+}
+
+[dir] .TopSearch__input:focus {
+  background-color: #31476b !important;
+  color: #ffffff !important;
 }
 
 .emoji_tt_wrap.tt_down::before { border-top-color: #101010 !important; }
