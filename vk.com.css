@@ -4,26 +4,26 @@
 :root {
   --azure_a100: #083466 !important;
   --black: #f0f0f8 !important;
-  --black_alpha4: rgba(255, 255, 255, 0.04) !important;
-  --black_alpha8: rgba(255, 255, 255, 0.08) !important;
-  --black_alpha12: rgba(255, 255, 255, 0.12) !important;
-  --black_alpha16: rgba(255, 255, 255, 0.16) !important;
-  --black_alpha24: rgba(255, 255, 255, 0.24) !important;
-  --black_alpha36: rgba(255, 255, 255, 0.36) !important;
-  --black_alpha40: rgba(255, 255, 255, 0.40) !important;
-  --black_alpha48: rgba(255, 255, 255, 0.48) !important;
-  --black_alpha56: rgba(255, 255, 255, 0.56) !important;
-  --black_alpha72: rgba(255, 255, 255, 0.72) !important;
-  --black_alpha88: rgba(255, 255, 255, 0.88) !important;
+  --black_alpha4: rgba(255, 255, 255, 0.04);
+  --black_alpha8: rgba(255, 255, 255, 0.08);
+  --black_alpha12: rgba(255, 255, 255, 0.12);
+  --black_alpha16: rgba(255, 255, 255, 0.16);
+  --black_alpha24: rgba(255, 255, 255, 0.24);
+  --black_alpha36: rgba(255, 255, 255, 0.36);
+  --black_alpha40: rgba(255, 255, 255, 0.40);
+  --black_alpha48: rgba(255, 255, 255, 0.48);
+  --black_alpha56: rgba(255, 255, 255, 0.56);
+  --black_alpha72: rgba(255, 255, 255, 0.72);
+  --black_alpha88: rgba(255, 255, 255, 0.88);
   --black_blue10: #cce4ff !important;
   --black_blue24: #add3ff !important;
   --black_blue24_alpha8: rgba(173, 211, 255, 0.08) !important;
   --black_blue24_alpha24: rgba(173, 211, 255, 0.24) !important;
   --black_blue30_alpha66: rgba(179, 214, 255, 0.66) !important;
   --black_blue45_alpha10: rgba(138, 196, 255, 0.10) !important;
-  --blue_400: #4f74bb !important;
-  --blue_400_alpha20: rgba(133, 174, 222, 0.20) !important;
-  --blue_400_alpha48: rgba(133, 174, 222, 0.49) !important;
+  --blue_400: #213e60 !important;
+  --blue_400_alpha20: rgba(30, 71, 117, 0.20) !important;
+  --blue_400_alpha48: rgba(30, 71, 117, 0.49) !important;
   --blue_420: #5884b6 !important;
   --blue_600: #9ab7db !important;
   --blue_640: #7ba8d5 !important;
@@ -43,7 +43,7 @@
   --gray_100: #242628 !important;
   --gray_100_alpha60: rgba(30, 32, 35, 0.60) !important;
   --gray_200: #4d4d4d !important;
-  --gray_300: #6c6c6c !important;
+  --gray_300: #8c8c8c !important;
   --gray_400: #7d7d7d !important;
   --gray_500: #9a9a9a !important;
   --gray_600: #aaaaaa !important;
@@ -84,7 +84,7 @@
   --red_alpha12: rgba(230, 70, 70, 0.12);
   --red_dark: #db3b3b;
   --red_light: #ffd6cc;
-  --red_nice: #ff3347;
+  --red_nice: #f5959e !important;
   --sky_60: #001d33 !important;
   --sky_80: #002b4d !important;
   --sky_100: #003a66 !important;
@@ -116,15 +116,15 @@
   --violet_light: #120d2b !important;
   --violet_muted: #9fa2bf !important;
   --white: #0f1118 !important;
-  --white_alpha72: rgba(0, 0, 0, 0.72) !important;
-  --white_alpha64: rgba(0, 0, 0, 0.64) !important;
-  --white_alpha48: rgba(0, 0, 0, 0.48) !important;
-  --white_alpha40: rgba(0, 0, 0, 0.40) !important;
-  --white_alpha24: rgba(0, 0, 0, 0.24) !important;
-  --white_alpha16: rgba(0, 0, 0, 0.16) !important;
-  --white_alpha12: rgba(0, 0, 0, 0.12) !important;
-  --white_alpha8: rgba(0, 0, 0, 0.08) !important;
-  --white_alpha4: rgba(0, 0, 0, 0.04) !important;
+  --white_alpha72: rgba(0, 0, 0, 0.72);
+  --white_alpha64: rgba(0, 0, 0, 0.64);
+  --white_alpha48: rgba(0, 0, 0, 0.48);
+  --white_alpha40: rgba(0, 0, 0, 0.40);
+  --white_alpha24: rgba(0, 0, 0, 0.24);
+  --white_alpha16: rgba(0, 0, 0, 0.16);
+  --white_alpha12: rgba(0, 0, 0, 0.12);
+  --white_alpha8: rgba(0, 0, 0, 0.08);
+  --white_alpha4: rgba(0, 0, 0, 0.04);
   --white_blue20: #000c1a !important;
   --white_blue32: #001c3d !important;
   --yellow: #a17300 !important;
@@ -135,6 +135,10 @@
   --lavender_700: #4c57a4 !important;
   --lavender_800: #7e87be !important;
   --lavender_900: #b0b6d8 !important;
+
+  --button-text-color: var(--black) !important;
+  --counter_primary_text: var(--black) !important;
+  --accent: var(--blue_bright) !important;
 }
 
 [dir] .TopHomeLink--logoWithText {
@@ -142,37 +146,57 @@
 }
 
 [dir] .flat_button.ui_load_more_btn, [dir] .stories_feed_preview_add,
+[dir] .audio_page_player2.audio_page_player_fixed, [dir] .pv_cont .narrow_column,
 [dir] .online.mobile::after, [dir] .eltt, [dir] .audio_page_layout .audio_friends_list,
 [dir] .im-page .im-page--top-date-bar.im-page--date-bar-transition.im-page--date-bar-transition-inverse {
   background-color: var(--white) !important;
 }
 
-[dir] .online::after {
-  border-color: var(--white) !important;
-}
-
-.im-chat-input .im-chat-input--text *,
-.mv_min_title, .eltt.feature_intro_blue_tt,
-.notifier_baloon, [dir] .notifier_baloon {
+.cal_table .day.sel, .cal_table .day.sel:hover, .cal_month_sel,
+.Button--primary, .box_title, .im-chat-input .im-chat-input--text *,
+.mv_min_title, .eltt.feature_intro_blue_tt, .notifier_baloon, [dir] .notifier_baloon,
+.videoplayer_settings_menu_list_item, .videoplayer_settings_menu_sublist_item,
+.videoplayer_context_menu ._item:hover, .tt_black .tt_text, .videoplayer_tooltip ._text {
   color: var(--black) !important;
 }
 
 .notifier_baloon_wrap a, .notifier_baloon_msg span.mem_link,
-.notifier_baloon_msg span.group_link {
+.notifier_baloon_msg span.group_link, .slider_hint,
+.audio_page_player2 .slider_hint.audio_player_hint {
   color: var(--blue_600) !important;
+}
+
+[dir] .online::after, [dir] .photos_container .photos_row {
+  border-color: var(--white) !important;
+}
+
+.settings_menu_rows .olist_item_menu .olist_item_photo,
+.LeftMenu__icon {
+  color: var(--blue_640);
 }
 
 [dir] .fc_msgs_out .fc_msgs {
   background-color: #131f2b !important;
 }
 
-[dir] .im-navigation--to-end .im-navigation__button {
-  background-color: #202632 !important;
+[dir] .im-navigation--to-end .im-navigation__button,
+[dir] .im-navigation--to-mention .im-navigation__button,
+[dir] .MusicAuthor_attach_preview, [dir] .MusicAuthorSnippet {
+  background-color: var(--steel_gray_60) !important;
 }
 
-.tt_w.like_tt, .tt_w.voting_tt,
+.tt_w.like_tt, .tt_w.voting_tt, .owner_photo_bubble,
 body.new_header_design .left_count_wrap {
   color: var(--black) !important;
+}
+
+[dir] #pv_box {
+  background-color: var(--steel_gray_100) !important;
+}
+
+.pv_cont .pv_bottom_actions > a, .pv_cont .pv_bottom_actions > span,
+.pv_cont .pv_bottom_actions > .pv_actions_more {
+  color: var(--gray_800) !important;
 }
 
 }
