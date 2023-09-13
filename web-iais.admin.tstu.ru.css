@@ -84,7 +84,7 @@ div#uLoginContainer > section.uRegion > div.uRegionHeading > h1 > div > img {
 table.formlayout td input.text_field, table.formlayout td select.selectlist,
 table.formlayout td input.password, table.formlayout td input[type="text"],
 table.formlayout td input[type="password"], table.formlayout td textarea,
-a.uButton, .apexir_COLUMN_SELECTOR {
+a.uButton, .apexir_COLUMN_SELECTOR, body.uPopUpLOV input.searchField {
   background-color: #151515 !important;
   color: #d0d0d0 !important;
 }
@@ -125,7 +125,7 @@ section.uRegion {
   color: #ffffff !important;
 }
 
-section.uRegion > div.uRegionHeading {
+section.uRegion > div.uRegionHeading, .ui-widget-header {
   background-color: #202020 !important;
   border-color: #202020 !important;
   background-image: linear-gradient(180deg, rgba(138, 180, 248, 0.3), rgba(0, 0, 0, 0))  !important;
@@ -144,13 +144,15 @@ section.uRegion > div.uRegionHeading {
   color: #d0d0d0 !important;
 }
 
-table.uReportStandard,
+table.uReportStandard, table.uReportAlternative,
+table.uReportAlternative > tbody > tr > td,
 #apexir_DATA_PANEL > table .apexir_WORKSHEET_DATA,
 #apexir_GROUP_BY > table .apexir_WORKSHEET_DATA {
   border-color: #404040 !important;
 }
 
 table.uReportStandard thead > tr > th,
+table.uReportAlternative thead > tr > th,
 #apexir_DATA_PANEL > table .apexir_WORKSHEET_DATA th,
 #apexir_GROUP_BY > table .apexir_WORKSHEET_DATA th {
   background-image: linear-gradient(0deg, #262626, #404040)  !important;
@@ -185,7 +187,8 @@ table.uReport > tbody > tr:hover > td,
 }
 
 #apexir_DATA_PANEL > table .apexir_WORKSHEET_DATA td,
-#apexir_GROUP_BY > table .apexir_WORKSHEET_DATA td {
+#apexir_GROUP_BY > table .apexir_WORKSHEET_DATA td,
+body.uPopUpLOV div.uActionBar {
   background-color: #101010 !important;
   border-color: #404040 !important;
   color: #d0d0d0 !important;
@@ -236,7 +239,7 @@ button.apexir-go-button span, a.uButton span,
   color: #d0d0d0 !important;
 }
 
-button.apexir-go-button, a.uButton span,
+button.apexir-go-button, a.uButton span, a.uButtonSmall,
 .apexir_ACTION_MENU button#apexir_ACTIONSMENUROOT,
 .apexir_ACTION_MENU button#apexir_WEBSHEETSMANAGE,
 .apexir_WEBSHEET_MENU button#apexir_ACTIONSMENUROOT,
@@ -245,13 +248,19 @@ button.apexir-go-button, a.uButton span,
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) !important;
 }
 
+.apex-tabular-form-error-box {
+  background-color: #242407 !important;
+  border-color: #73510c !important;
+}
+
 #apexir_columnsearch, #apexir_col_values_drop,
 #apexir_rollover, .dhtmlSubMenu, .dhtmlSubMenu li.dhtmlMenuSep {
   background-color: #101010 !important;
   border-color: #404040 !important;
 }
 
-#apexir_columnsearch > a, .dhtmlSubMenu li a, .dhtmlSubMenu li a span {
+#apexir_columnsearch > a, .dhtmlSubMenu li a, .dhtmlSubMenu li a span,
+.apexir_SAVED_REPORTS label, .apexir_ROW_SELECT_LIST label {
   color: #d0d0d0 !important;
 }
 
@@ -280,38 +289,17 @@ body.uPopUpLOV div.lovLinks a {
   color: #ffffff !important;
 }
 
-#apexir_DATA_PANEL > table .apexir_WORKSHEET_DATA tr.rule_261429418619572136 td
-  { background-color: #242017 !important; }
-#apexir_DATA_PANEL > table .apexir_WORKSHEET_DATA tr.rule_261429507620572136 td
-  { background-color: #243324 !important; }
-#apexir_DATA_PANEL > table .apexir_WORKSHEET_DATA tr.rule_261429616192572136 td
-  { background-color: #291b1f !important; }
-#apexir_DATA_PANEL > table .apexir_WORKSHEET_DATA tr.rule_261429721648572136 td
-  { background-color: #E4F2F5 !important; }
-#apexir_DATA_PANEL > table .apexir_WORKSHEET_DATA tr.rule_261429802350572136 td
-  { background-color: #233236 !important; }
-#apexir_DATA_PANEL > table .apexir_WORKSHEET_DATA tr.rule_261430504652572137 td
-  { background-color: #2a333d !important; }
-#apexir_DATA_PANEL > table .apexir_WORKSHEET_DATA tr.rule_261430005588572136 td
-  { background-color: #302023 !important; }
-#apexir_DATA_PANEL > table .apexir_WORKSHEET_DATA tr.rule_261430106899572136 td
-  { background-color: #2e3322 !important; }
-#apexir_DATA_PANEL > table .apexir_WORKSHEET_DATA tr.rule_261430213878572136 td
-  { background-color: #382538 !important; }
-#apexir_DATA_PANEL > table .apexir_WORKSHEET_DATA tr.rule_261430302523572136 td
-  { background-color: #3b3429 !important; }
-#apexir_DATA_PANEL > table .apexir_WORKSHEET_DATA tr.rule_261430422360572137 td
-  { background-color: #1f2615 !important; }
-#apexir_DATA_PANEL > table .apexir_WORKSHEET_DATA tr.rule_261429931958572136 td
-  { background-color: #2c2e1d !important; }
-
-
 #apexir_DATA_PANEL > table .apexir_WORKSHEET_DATA tr td.rule_261424230301521146_td {
  background-color: #361f19 !important;
  color: #f7908e !important;
 }
 
-.ui-widget-overlay {
+font[color="green"] {  color: #9ed293 !important; }
+font[color="navy"] {  color: #9999ca !important; }
+font[color="blue"] { color: #7f96d9 !important; }
+font[color="maroon"] { color: #f7908e !important; }
+
+.ui-widget-overlay, .ui-widget-content {
   background: #000000 !important;
   opacity: 0.55 !important;
 }
@@ -319,6 +307,7 @@ body.uPopUpLOV div.lovLinks a {
 .ui-widget-content {
   background-color: #202020 !important;
   border-color: #262626 !important;
+  background-image: linear-gradient(0deg, #262626, #404040)  !important;
 }
 
 .ui-widget-header {
@@ -329,4 +318,10 @@ body.uPopUpLOV div.lovLinks a {
 
 #ModalWait #loaderImage {
   background-image: url('./tstu/img/loading.gif') !important;
+}
+
+.TEXT_CURSIV, .SEM {
+  color: #c8ced5 !important;
+}
+
 }
