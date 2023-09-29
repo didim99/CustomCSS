@@ -188,6 +188,7 @@ table.uReport > tbody > tr:hover > td,
 
 #apexir_DATA_PANEL > table .apexir_WORKSHEET_DATA td,
 #apexir_GROUP_BY > table .apexir_WORKSHEET_DATA td,
+div.uRegionContent table[class^="plan_"],
 body.uPopUpLOV div.uActionBar {
   background-color: #101010 !important;
   border-color: #404040 !important;
@@ -300,8 +301,7 @@ font[color="blue"] { color: #7f96d9 !important; }
 font[color="maroon"] { color: #f7908e !important; }
 
 .ui-widget-overlay, .ui-widget-content {
-  background: #000000 !important;
-  opacity: 0.55 !important;
+  background: rgba(0, 0, 0, 0.5); !important;
 }
 
 .ui-widget-content {
