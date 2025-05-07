@@ -324,4 +324,20 @@ font[color="maroon"] { color: #f7908e !important; }
   color: #c8ced5 !important;
 }
 
+.TABLE .TH {
+  background-color: #404012 !important;
+}
+
+.TABLE .TDL, .TABLE .TDC, .TABLE .TDR {
+  background-color: #151515 !important;
+}
+
+.TABLE .TFL, .TABLE .TFC, .TABLE .TFR {
+  background-color: #0f440f !important;
+}
+
+.TABLE .TXL, .TABLE .TXC, .TABLE .TXR {
+  background-color: #15384e !important;
+}
+
 }
